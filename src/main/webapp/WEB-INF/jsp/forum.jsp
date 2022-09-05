@@ -104,19 +104,6 @@ a, a:hover {
 				</tbody>
 			</table>
 			<%
-				if (pageForumNumber != 1) {
-			%>
-			<a href="/forum?pageForumNumber=<%=pageForumNumber - 1%>"
-				class="btn btn-success btn-arrow-left">Previous Page</a>
-			<%
-				}
-				if (forumService.getNextPage(pageForumNumber + 1)) {
-			%>
-			<a href="/forum?pageForumNumber=<%=pageForumNumber + 1%>" class="btn btn-success btn-arrow-right">Next Page</a>
-			<%
-				}
-			%>
-			<%
 				if (userId != null) {
 					UserService userService = (UserService) application.getAttribute("userService");
 					UserDto userDto = userService.findByUserId(userId);
