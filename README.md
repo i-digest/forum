@@ -1,6 +1,6 @@
 # Java: Basic Forum Web Application 
 
-This is a basic forum web application built with JDK 17, JSP, Spring Boot, Embedded Apache Tomcat and Maven
+This is a basic forum web application built with JDK 17, JSP, Spring Boot, Embedded Apache Tomcat, PostgreSQL and Maven
 
 ## Techniques and features of the web application 
 
@@ -68,7 +68,7 @@ Since it’s unlikely that you’ll want to distribute or work with .class files
 ```shell
 mvn package
 ```
-The package goal will compile your Java code and finish by packaging the code up in a WAR file within the target directory. The name of the WAR file will be based on the project’s <artifactId> and <version>. For example, given the minimal pom.xml file from before, the WAR file will be named gs-maven-0.1.0.jar.
+The package goal will compile your Java code and finish by packaging the code up in a WAR file within the target directory. The name of the WAR file will be based on the project’s <artifactId> and <version>. For example, given the minimal pom.xml file from before, the WAR file will be named forum-1.0.war.
 
 To execute the JAR file run:
 ```shell
